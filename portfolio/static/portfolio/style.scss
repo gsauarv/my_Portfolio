@@ -1,0 +1,235 @@
+$coloor :white;
+$buttonColor:#111E77;
+$textColor:black;
+$fullwidth : 100%;
+$headingSize:20px;
+$bodySize:16px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav
+{
+    width: $fullwidth;
+    background-color: $coloor;
+}
+
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    // background-color: $coloor;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    // overflow: hidden;
+}
+
+.container
+{
+    width: $fullwidth;
+    padding:0px 300px;       
+}
+
+.navLinks
+{
+    margin-left:45%;
+}
+
+nav ul li a
+{
+    color:$textColor;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+nav ul li
+{
+    
+    list-style-type: none;
+    display:inline;
+    padding:15px;
+}
+
+.button
+{
+    background-color: $buttonColor;
+    color: $coloor;  
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+
+}
+
+.logo
+{
+    height: 80px;
+}
+.logo img
+{
+    height:250px;
+    margin-top: -28%;
+}
+
+.landingPage
+{
+    background-color:$coloor;
+    width: $fullwidth;
+    height: 80vh;
+}
+
+.hero
+{
+    width: $fullwidth;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+}
+
+.heroTitle
+{
+    width: 33%;
+    margin-top: 150px;
+
+}
+.heroTitle h1
+{
+    font-size: $headingSize;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+
+}
+.heroTitle p
+{
+    font-size: $bodySize;
+    color: rgb(58, 58, 58);
+    letter-spacing: 1px;
+}
+
+.projectBtn
+{
+    @extend .button;
+    width:180px;
+    height: 40px;
+    margin-top: 100px;
+}
+
+.heroImg
+{
+    border-radius: 100%;
+    height: 450px;
+    width: 450px;
+    overflow: hidden;
+    margin-left:31%;
+    margin-top: 130px;
+    border: none;
+    outline: none;
+}
+
+.heroImg img
+{
+    height:180%;
+    margin-top: -15%;
+}
+
+.AboutSection
+{
+    width: $fullwidth;
+    background-color: $buttonColor;
+    height: 630px;
+
+}
+.aboutContainer
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.aboutTitle
+{
+    width: $fullwidth;
+    height: 650px;
+}
+.aboutTitle h3
+{
+    color: $coloor;
+    margin-top: 110px;
+    font-size: $headingSize;
+}
+
+.aboutText
+{
+    width: 50%;
+}
+.aboutText p
+{
+    color: $coloor;
+    margin-top: 110px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.aboutMeBtn
+{
+    @extend .projectBtn;
+    background-color: $coloor;
+    color: black;
+    
+}
+
+.impSection
+{
+    @extend .AboutSection;
+    background-color:white;
+    height: 100%;
+}
+
+.impContainer
+{
+    @extend .aboutContainer;
+    padding-bottom: 110px;
+}
+
+.impTitle{
+    @extend .aboutText;
+    width: 100%;
+}
+
+.impTitle h3
+{
+    color: black;
+    margin-top: 110px;
+    font-size: $headingSize;
+}
+
+.impText
+{
+    @extend .aboutText;
+    margin-top:110px;
+    width: 50%;
+}
+
+.impText li
+{
+    list-style-type: none;
+    height: 30px;
+    border-left: 5px solid $buttonColor;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+

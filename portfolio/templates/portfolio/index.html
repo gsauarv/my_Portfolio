@@ -1,0 +1,63 @@
+{% extends "portfolio/base.html" %}
+{%block title%}
+<title>Saurav Ghimire</title>
+{%endblock%}
+{% block body %}
+<section class="landingPage">
+    <div class="container">
+        <div class="hero">
+            <div class="heroTitle">
+                <h1>Tired Of Searching Perfect Web <br>Developer ?</h1>
+                <p>Then You've Reached To The End Of Your Hustle. I Will Take Care Of Your Problems.<br><br>I'm Saurav Ghimire, <br>a Passionate Full Stack Django Developer and Designer.</p>
+                <button class="projectBtn">See Projects</button>
+            </div>
+
+            <div class="heroImg">
+                {%load static%}
+                <img src="{%static 'portfolio/img/self.jpg'%}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="AboutSection">
+    <div class="container">
+        <div class="aboutContainer">
+        <div class="aboutTitle">
+            <h3>Who Am I ?</h3>
+        </div>
+        <div class="aboutText">
+            <p>I am Saurav Ghimire, a Student of Information And Technology.Currently Studying BCS(Bachleour's  In Computer Science). <br><br>
+            Since I passed My School, The eager to learn more about the IT industry has been my passion as I started learning HTML and CSS when I was 16 years old
+            and then join the college to learn Computer Science and More About the Web Technology. Since then the desiging industry has massively improved and changed in a good way And
+            I am Adapting and updating myself till date.<br><br>
+
+            So that is a Brief Story of Who I am and What I like. Learn More About Me and My Interest by clicking the Button.
+            </p>
+
+            <button class="aboutMeBtn">Learn More About Me</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="impSection">
+    <div class="container">
+        <div class="impContainer">
+            <div class="impTitle"">
+                <h3>Why Do You Have To Have A Personal Website ?</h3>
+            </div>
+            <div class="impText">
+                <li>To Insure You Look Professional And Passionate To The Clients.</li>
+                <li>It Will Help You To Share Information About Yourself And Your Business.</li>
+                <li>To Insure You Look Professional And Passionate To The Clients.</li>
+                <li>Websites and Blogs Are The Best Way Of Communicating And Knowing The Personality Of A Indivisual.</li>
+                <li>Branding and Advertisement Are Way More Effective Using Websites.</li>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+{%endblock%}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} 
+    {%endblock %}
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="nav">
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="{% static 'portfolio/img/white.svg'%}" alt="logo">
+            </div>
+                <div class="navLinks">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li> 
+                            <li><a href="#">About</a></li> 
+                            <li><a href="#">Blogs</a></li> 
+                            <li><a href="#">Contact</a></li>
+                            <button class="button">Hire Me</button> 
+                        </ul>
+                    </nav>
+                </div>
+                   
+            </div>
+        </div>
+    </section>
+    
+
+{%block body%}
+
+{%endblock%}   
+</body>
+
+</html>
